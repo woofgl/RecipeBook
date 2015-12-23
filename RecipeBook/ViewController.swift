@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    @IBOutlet var tableView: UITableView!
 
     var recipes: [String] = []
     
@@ -17,6 +18,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         // Do any additional setup after loading the view, typically from a nib.
         
         recipes = ["Egg Benedict", "Mushroom Risotto", "Full Breakfast", "Hamburger", "Ham and Egg Sandwich", "Creme Brelee", "White Chocolate Donut", "Starbucks Coffee", "Vegetable Curry", "Instant Noodle with Egg", "Noodle with BBQ Pork", "Japanese Noodle with Pork", "Green Tea", "Thai Shrimp Cake", "Angry Birds Cake", "Ham and Cheese Panini", ""]
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,6 +36,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier(identifier)! as UITableViewCell
         cell.textLabel?.text = self.recipes[indexPath.row]
         return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showRecipeDetail" {
+            
+            if let indexPath = self.tableView.indexPathForSelectedRow{
+                let object: NSString = recipes[indexPath.row] as NSString
+                
+                (segue.destinationViewController as! RecipeDetailViewController).recipeName = object
+                
+            }
+        }
     }
 
 }

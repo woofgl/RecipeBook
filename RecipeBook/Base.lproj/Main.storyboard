@@ -29,7 +29,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="tjn-FH-b9f" kind="push" id="2tY-fs-adN"/>
+                                            <segue destination="tjn-FH-b9f" kind="push" identifier="showRecipeDetail" id="2tY-fs-adN"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -42,15 +42,18 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Recipe Book" id="ReE-EP-rp0"/>
+                    <connections>
+                        <outlet property="tableView" destination="h6J-EL-C6g" id="8RL-IH-Ve7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1117" y="336"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipe Detail View Controller-->
         <scene sceneID="Wk2-gF-lP2">
             <objects>
-                <viewController id="tjn-FH-b9f" sceneMemberID="viewController">
+                <viewController id="tjn-FH-b9f" customClass="RecipeDetailViewController" customModule="RecipeBook" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SBM-SD-e7L"/>
                         <viewControllerLayoutGuide type="bottom" id="W0S-0N-wXz"/>
@@ -60,7 +63,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="there can display the details of this cell" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvh-kD-hhk">
-                                <rect key="frame" x="33" y="189" width="297" height="21"/>
+                                <rect key="frame" x="69" y="146" width="297" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -69,6 +72,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="IuV-4e-Zlr"/>
+                    <connections>
+                        <outlet property="recipeLabel" destination="Yvh-kD-hhk" id="p2b-RL-E2K"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hby-1G-HRr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
