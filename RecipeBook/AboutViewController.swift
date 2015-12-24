@@ -21,7 +21,13 @@ class AboutViewController: UIViewController {
         
         // Add code to load web content in UIWebView
 
-        webView.loadRequest(NSURLRequest(URL: NSURL(string: "https://github.com/")!))
+//        //load with a url
+//        webView.loadRequest(NSURLRequest(URL: NSURL(string: "https://github.com/")!))
+        
+        let url = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("about", ofType: "html")!)
+        let request = NSURLRequest(URL: url)
+        webView.loadRequest(request)
+        
     }
 
     override func didReceiveMemoryWarning() {

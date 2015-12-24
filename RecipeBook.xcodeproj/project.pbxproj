@@ -15,6 +15,7 @@
 		1B87B0391C29352100BFA940 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87B0381C29352100BFA940 /* RecipeDetailViewController.swift */; };
 		1BB7C4911C2B8F6D0010022E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7C4901C2B8F6D0010022E /* AboutViewController.swift */; };
 		1BB7C4931C2B9FD90010022E /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1BB7C4921C2B9FD90010022E /* about.html */; };
+		1BB7C4951C2BEBB10010022E /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BB7C4941C2BEBB10010022E /* about.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1B87B0381C29352100BFA940 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
 		1BB7C4901C2B8F6D0010022E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		1BB7C4921C2B9FD90010022E /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = about/about.html; sourceTree = SOURCE_ROOT; };
+		1BB7C4941C2BEBB10010022E /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = about.jpg; path = about/about.jpg; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		1B87B0211C28E7A900BFA940 /* RecipeBook */ = {
 			isa = PBXGroup;
 			children = (
+				1BB7C4941C2BEBB10010022E /* about.jpg */,
 				1BB7C4921C2B9FD90010022E /* about.html */,
 				1B87B0221C28E7A900BFA940 /* AppDelegate.swift */,
 				1B87B0241C28E7A900BFA940 /* ViewController.swift */,
@@ -132,6 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB7C4951C2BEBB10010022E /* about.jpg in Resources */,
 				1BB7C4931C2B9FD90010022E /* about.html in Resources */,
 				1B87B02D1C28E7A900BFA940 /* LaunchScreen.storyboard in Resources */,
 				1B87B02A1C28E7A900BFA940 /* Assets.xcassets in Resources */,
