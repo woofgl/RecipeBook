@@ -13,6 +13,8 @@
 		1B87B02A1C28E7A900BFA940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B87B0291C28E7A900BFA940 /* Assets.xcassets */; };
 		1B87B02D1C28E7A900BFA940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B87B02B1C28E7A900BFA940 /* LaunchScreen.storyboard */; };
 		1B87B0391C29352100BFA940 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87B0381C29352100BFA940 /* RecipeDetailViewController.swift */; };
+		1BB7C4911C2B8F6D0010022E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7C4901C2B8F6D0010022E /* AboutViewController.swift */; };
+		1BB7C4931C2B9FD90010022E /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1BB7C4921C2B9FD90010022E /* about.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		1B87B02C1C28E7A900BFA940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B87B02E1C28E7A900BFA940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B87B0381C29352100BFA940 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		1BB7C4901C2B8F6D0010022E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		1BB7C4921C2B9FD90010022E /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = about/about.html; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,7 @@
 		1B87B0211C28E7A900BFA940 /* RecipeBook */ = {
 			isa = PBXGroup;
 			children = (
+				1BB7C4921C2B9FD90010022E /* about.html */,
 				1B87B0221C28E7A900BFA940 /* AppDelegate.swift */,
 				1B87B0241C28E7A900BFA940 /* ViewController.swift */,
 				1B87B0261C28E7A900BFA940 /* Main.storyboard */,
@@ -63,6 +68,7 @@
 				1B87B02B1C28E7A900BFA940 /* LaunchScreen.storyboard */,
 				1B87B02E1C28E7A900BFA940 /* Info.plist */,
 				1B87B0381C29352100BFA940 /* RecipeDetailViewController.swift */,
+				1BB7C4901C2B8F6D0010022E /* AboutViewController.swift */,
 			);
 			path = RecipeBook;
 			sourceTree = "<group>";
@@ -126,6 +132,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BB7C4931C2B9FD90010022E /* about.html in Resources */,
 				1B87B02D1C28E7A900BFA940 /* LaunchScreen.storyboard in Resources */,
 				1B87B02A1C28E7A900BFA940 /* Assets.xcassets in Resources */,
 				1B87B0281C28E7A900BFA940 /* Main.storyboard in Resources */,
@@ -141,6 +148,7 @@
 			files = (
 				1B87B0251C28E7A900BFA940 /* ViewController.swift in Sources */,
 				1B87B0391C29352100BFA940 /* RecipeDetailViewController.swift in Sources */,
+				1BB7C4911C2B8F6D0010022E /* AboutViewController.swift in Sources */,
 				1B87B0231C28E7A900BFA940 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
