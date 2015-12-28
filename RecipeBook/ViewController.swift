@@ -44,7 +44,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             if let indexPath = self.tableView.indexPathForSelectedRow{
                 let object: NSString = recipes[indexPath.row] as NSString
                 
-                (segue.destinationViewController as! RecipeDetailViewController).recipeName = object
+                let destViewController = segue.destinationViewController as! RecipeDetailViewController
+                
+                destViewController.recipeName = object
+                destViewController.hidesBottomBarWhenPushed = true
                 
             }
         }
