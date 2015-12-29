@@ -63,15 +63,23 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "showRecipeDetail" {
             
-            if let indexPath = self.tableView.indexPathForSelectedRow{
-                let object: NSString = recipes[indexPath.row] as NSString
-                
-                let destViewController = segue.destinationViewController as! RecipeDetailViewController
+            let indexPath: NSIndexPath
+            let destViewController = segue.destinationViewController as! RecipeDetailViewController
+            
+            //when select a search result row
+            if self.searchDisplayController!.active {
+                indexPath = self.searchDisplayController!.searchResultsTableView.indexPathForSelectedRow!
+                destViewController.recipeName = searchResults[indexPath.row]
+            } else {
+                //when select a normal row
+                let indexPath = self.tableView.indexPathForSelectedRow
+                let object: NSString = recipes[indexPath!.row] as NSString
                 
                 destViewController.recipeName = object
-                destViewController.hidesBottomBarWhenPushed = true
                 
             }
+            
+            destViewController.hidesBottomBarWhenPushed = true
         }
     }
     
@@ -81,10 +89,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         }
     }
+    
     func searchDisplayController(controller: UISearchController, shouldReloadTableForSearchString searchString: String!) -> Bool {
         self.filterContentForSearchText (searchString)
         return true
     
+    }
+    
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if tableView == self.searchDisplayController!.searchResultsTableView {
+            self.performSegueWithIdentifier("showRecipeDetail", sender: self)
+        }
     }
 
 }
