@@ -12,12 +12,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet var tableView: UITableView!
 
     var recipes: [String] = []
+    var searchResults: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        recipes = ["Egg Benedict", "Mushroom Risotto", "Full Breakfast", "Hamburger", "Ham and Egg Sandwich", "Creme Brelee", "White Chocolate Donut", "Starbucks Coffee", "Vegetable Curry", "Instant Noodle with Egg", "Noodle with BBQ Pork", "Japanese Noodle with Pork", "Green Tea", "Thai Shrimp Cake", "Angry Birds Cake", "Ham and Cheese Panini", ""]
+        recipes = ["Egg Benedict 9", "Mushroom Risotto", "Full Breakfast", "Hamburger", "Ham and Egg Sandwich", "Creme Brelee", "White Chocolate Donut", "Starbucks Coffee", "Vegetable Curry", "Instant Noodle with Egg", "Noodle with BBQ Pork", "Japanese Noodle with Pork", "Green Tea", "Thai Shrimp Cake", "Angry Birds Cake", "Ham and Cheese Panini", ""]
         
     }
 
@@ -27,14 +28,35 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return recipes.count
+        if self.searchDisplayController!.active {
+            return searchResults.count
+        } else {
+            return recipes.count
+        }
     }
     
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let identifier = "RecipeCell"
-        let cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier(identifier)! as UITableViewCell
-        cell.textLabel?.text = self.recipes[indexPath.row]
+        let cellOpt:UITableViewCell? = tableView.dequeueReusableCellWithIdentifier(identifier);
+        let cell:UITableViewCell
+        if (cellOpt != nil){
+            cell = cellOpt!;
+        }else{
+            cell = UITableViewCell.init(style: UITableViewCellStyle.Default, reuseIdentifier: identifier)
+        }
+
+        if self.searchDisplayController!.active {
+            if searchResults.isEmpty {
+                cell.textLabel?.text = ""
+            }else{
+                cell.textLabel?.text = self.searchResults[indexPath.row]
+            }
+            
+        } else {
+            cell.textLabel?.text = self.recipes[indexPath.row]
+        }
+        
         return cell
     }
     
@@ -51,6 +73,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
             }
         }
+    }
+    
+    func filterContentForSearchText (searchText: String) {
+        searchResults = recipes.filter{
+            $0.localizedCaseInsensitiveContainsString("\(searchText)")
+        
+        }
+    }
+    func searchDisplayController(controller: UISearchController, shouldReloadTableForSearchString searchString: String!) -> Bool {
+        self.filterContentForSearchText (searchString)
+        return true
+    
     }
 
 }
