@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B172C7A1C33CD750022D177 /* cloud_small.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B172C771C33CD750022D177 /* cloud_small.png */; };
+		1B172C7B1C33CD750022D177 /* cloud_small@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B172C781C33CD750022D177 /* cloud_small@2x.png */; };
+		1B172C7C1C33CD750022D177 /* cloud_small@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1B172C791C33CD750022D177 /* cloud_small@3x.png */; };
 		1B87B0231C28E7A900BFA940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87B0221C28E7A900BFA940 /* AppDelegate.swift */; };
 		1B87B0251C28E7A900BFA940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87B0241C28E7A900BFA940 /* ViewController.swift */; };
 		1B87B0281C28E7A900BFA940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B87B0261C28E7A900BFA940 /* Main.storyboard */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B172C771C33CD750022D177 /* cloud_small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cloud_small.png; path = ../../../../Downloads/cloud_images/cloud_small.png; sourceTree = "<group>"; };
+		1B172C781C33CD750022D177 /* cloud_small@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cloud_small@2x.png"; path = "../../../../Downloads/cloud_images/cloud_small@2x.png"; sourceTree = "<group>"; };
+		1B172C791C33CD750022D177 /* cloud_small@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "cloud_small@3x.png"; path = "../../../../Downloads/cloud_images/cloud_small@3x.png"; sourceTree = "<group>"; };
 		1B87B01F1C28E7A900BFA940 /* RecipeBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B87B0221C28E7A900BFA940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1B87B0241C28E7A900BFA940 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 		1B87B0211C28E7A900BFA940 /* RecipeBook */ = {
 			isa = PBXGroup;
 			children = (
+				1B172C771C33CD750022D177 /* cloud_small.png */,
+				1B172C781C33CD750022D177 /* cloud_small@2x.png */,
+				1B172C791C33CD750022D177 /* cloud_small@3x.png */,
 				1BB7C4941C2BEBB10010022E /* about.jpg */,
 				1BB7C4921C2B9FD90010022E /* about.html */,
 				1B87B0221C28E7A900BFA940 /* AppDelegate.swift */,
@@ -139,7 +148,10 @@
 				1BB7C4931C2B9FD90010022E /* about.html in Resources */,
 				1B87B02D1C28E7A900BFA940 /* LaunchScreen.storyboard in Resources */,
 				1B87B02A1C28E7A900BFA940 /* Assets.xcassets in Resources */,
+				1B172C7B1C33CD750022D177 /* cloud_small@2x.png in Resources */,
 				1B87B0281C28E7A900BFA940 /* Main.storyboard in Resources */,
+				1B172C7A1C33CD750022D177 /* cloud_small.png in Resources */,
+				1B172C7C1C33CD750022D177 /* cloud_small@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
