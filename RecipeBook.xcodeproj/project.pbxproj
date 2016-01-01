@@ -16,6 +16,7 @@
 		1B87B02A1C28E7A900BFA940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B87B0291C28E7A900BFA940 /* Assets.xcassets */; };
 		1B87B02D1C28E7A900BFA940 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B87B02B1C28E7A900BFA940 /* LaunchScreen.storyboard */; };
 		1B87B0391C29352100BFA940 /* RecipeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B87B0381C29352100BFA940 /* RecipeDetailViewController.swift */; };
+		1B9B1F051C362BBB002B9F7D /* recipes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1B9B1F041C362BBB002B9F7D /* recipes.plist */; };
 		1BB7C4911C2B8F6D0010022E /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BB7C4901C2B8F6D0010022E /* AboutViewController.swift */; };
 		1BB7C4931C2B9FD90010022E /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 1BB7C4921C2B9FD90010022E /* about.html */; };
 		1BB7C4951C2BEBB10010022E /* about.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1BB7C4941C2BEBB10010022E /* about.jpg */; };
@@ -33,6 +34,7 @@
 		1B87B02C1C28E7A900BFA940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1B87B02E1C28E7A900BFA940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B87B0381C29352100BFA940 /* RecipeDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailViewController.swift; sourceTree = "<group>"; };
+		1B9B1F041C362BBB002B9F7D /* recipes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = recipes.plist; sourceTree = "<group>"; };
 		1BB7C4901C2B8F6D0010022E /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		1BB7C4921C2B9FD90010022E /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = about.html; path = about/about.html; sourceTree = SOURCE_ROOT; };
 		1BB7C4941C2BEBB10010022E /* about.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = about.jpg; path = about/about.jpg; sourceTree = SOURCE_ROOT; };
@@ -81,6 +83,7 @@
 				1B87B02E1C28E7A900BFA940 /* Info.plist */,
 				1B87B0381C29352100BFA940 /* RecipeDetailViewController.swift */,
 				1BB7C4901C2B8F6D0010022E /* AboutViewController.swift */,
+				1B9B1F041C362BBB002B9F7D /* recipes.plist */,
 			);
 			path = RecipeBook;
 			sourceTree = "<group>";
@@ -149,6 +152,7 @@
 				1B87B02D1C28E7A900BFA940 /* LaunchScreen.storyboard in Resources */,
 				1B87B02A1C28E7A900BFA940 /* Assets.xcassets in Resources */,
 				1B172C7B1C33CD750022D177 /* cloud_small@2x.png in Resources */,
+				1B9B1F051C362BBB002B9F7D /* recipes.plist in Resources */,
 				1B87B0281C28E7A900BFA940 /* Main.storyboard in Resources */,
 				1B172C7A1C33CD750022D177 /* cloud_small.png in Resources */,
 				1B172C7C1C33CD750022D177 /* cloud_small@3x.png in Resources */,
